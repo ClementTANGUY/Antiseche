@@ -3,33 +3,26 @@
     <%= image_tag "Logo 2.png" %>
   <% end %>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="outline: none;">
     <span class="navbar-toggler-icon"></span>
   </button>
 
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <%= link_to "Prestations", "#", class: "nav-link" %>
+  <div class="collapse navbar-collapse navbar-wagon-right" id="navbarSupportedContent" >
+    <ul class="navbar-nav mr-auto ">
+      <li class="nav-item navbar-wagon-link">
+        <%= link_to "Prestations", "#", class: "navbar-wagon-item navbar-wagon-link" %>
       </li>
-      <li class="nav-item">
-        <%= link_to "Tarifs", "#", class: "nav-link" %>
+      <li class="nav-item navbar-wagon-link">
+        <%= link_to "Tarifs", "#", class: "navbar-wagon-item navbar-wagon-link" %>
       </li>
-      <li class="nav-item">
-        <%= link_to "Qui suis-je ?", "#", class: "nav-link" %>
+      <li class="nav-item navbar-wagon-link">
+        <%= link_to "À propos", "#", class: "navbar-wagon-item navbar-wagon-link" %>
       </li>
-      <li class="nav-item">
-        <%= link_to "Contact", "#", class: "nav-link" %>
+      <li class="nav-item navbar-wagon-link">
+        <%= link_to "Contact", "#", class: "navbar-wagon-item navbar-wagon-link" %>
       </li>
-      <li class="nav-item dropdown">
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <%= link_to "Prestations", "#", class: "dropdown-item" %>
-          <%= link_to "Tarifs", "#", class: "dropdown-item" %>
-          <%= link_to "Qui suis-je ?", "#", class: "dropdown-item" %>
-          <%= link_to "Contact", "#", class: "dropdown-item" %>
-        </div>
-      </li>
+
     </ul>
   </div>
 </div>
