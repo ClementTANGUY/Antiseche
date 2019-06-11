@@ -1,5 +1,5 @@
 .banner {
-  height: calc(100vh - 70px);
+  height: 100vh;
   background-size: cover;
   background-position: center;
   padding: 150px 0;
@@ -31,9 +31,15 @@
 .chevron {
   color: white;
   position: relative;
-  top: 300px;
+  top: 350px;
 }
 
 .chevron a {
   color: white;
+}
+
+#services {
+  height: 100vh;
+  background: #F4F4F4;
+  padding: 100px 0;
 }
