@@ -1,39 +1,148 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= image_url "Wrapper2.jpg" %>');">
+<div id="top" class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= image_url "Wrapper2.jpg" %>');">
   <div class="container">
-    <h1><strong>Rédaction</strong> | <strong>Optimisation</strong> de <strong>contenus Web</strong></h1>
-    <p></p>
-    <p>J'écris pour vous</p>
+    <h1><strong>Rédaction</strong> | <strong>Optimisation</strong> de <strong>Sites Web</strong></h1>
   </div>
   <div class="text-center chevron">
-    <a data-scroll href="#services">
+    <p>J'écris pour toi</p>
+    <%= link_to '#services' do %>
       <i class="fas fa-chevron-down fa-5x pulse"></i>
-    </a>
+    <% end %>
   </div>
 </div>
-
 
 <div class="container" id="services">
+
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="service-category d-block" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_url "articles.jpg" %>')">
+          <div class="service-title">
+            Articles & Pages
+          </div>
+          <p>
+            <strong>Référencement naturel et expérience utilisateur</strong><br>
+            Articles informatifs, blogs, intégrés sur ton propre site pour un meilleur maillage interne ou invités sur un site tiers avec backlinks,<br>
+            j'écris, optimise et mets à jour tes contenus.
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="service-category d-block" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_url "products.jpg" %>')">
+          <div class="service-title">
+            Fiches produits
+          </div>
+          <p>
+            <strong>Augmentation de CA</strong><br>
+            Je rédige les fiches descriptives des produits de ton site e-commerce<br>
+            Objectif : <strong>optimisation pour les moteurs de recherche grâce à l'insertion de mots-clés</strong>.
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="service-category d-block" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_url "SEO.jpg" %>')">
+          <div class="service-title">
+            SEO
+          </div>
+          <p>
+            <strong>Fais décoller ton audience grâce à un trafic de qualité</strong><br>
+            Réalisation d'un <strong>audit SEO de ton site</strong>, textes <strong>"copywrités"</strong>, amélioration du <strong>référencement naturel</strong>.
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="service-category d-block" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_url "landingpage.jpg" %>')">
+          <div class="service-title">
+            Landing pages
+          </div>
+          <p>
+            <strong>Un site Internet développé de A à Z </strong><br>
+            <strong>Logo, UX & UI flat design, code, </strong> Je maîtrise toutes les étapes de <strong>création et mise en production de ton site web</strong>.<br>
+            J'ai réalisé le site sur lequel tu scrolles en ce moment...
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="service-category d-block" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_url "newsletters.jpg" %>')">
+          <div class="service-title">
+            Newsletters
+           </div>
+           <p>
+            <strong>Format idéal</strong><br>
+             Tu manques de temps ou ça te gonfle...<br>
+             J'écris tes newsletters.
+           </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="service-category d-block" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_url "subtitles.jpg" %>')">
+          <div class="service-title">
+            Sous-titres
+          </div>
+          <p>
+            <strong>Entreprises & vloggeurs</strong><br>
+            Insertion de sous-titres à tes vidéos professionnelles.
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="service-category d-block" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_url "presentation.jpg" %>')">
+          <div class="service-title">
+            Infographies
+          </div>
+          <p>
+            <strong>Ton PowerPoint ou autres</strong><br>
+            Je me charge de rédiger et d'intégrer tes textes de présentation.
+          </p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+</div>
+
+<div class="container" id="prices">
   <div class="cards">
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-      Articles & Pages
+  <div class="card-estimate">
+    <img src='<%= image_url "prices.jpg" %>'>
+    <div class="card-estimate-infos">
+      <div>
+        <h2>Forfait rédaction Web</h2>
+        <p>500 à 2000 mots</p>
+      </div>
+      <h2 class="card-estimate-pricing">6 cts/mot</h2>
     </div>
+  </div>
+  <div class="card-estimate">
+    <img src='<%= image_url "prices.jpg" %>'>
+    <div class="card-estimate-infos">
+      <div>
+        <h2>Une autre prestation ?<br>
+          Contacte-moi <i class="fas fa-arrow-circle-right arrow"></i>
+        </h2>
+      </div>
+      <%= link_to '#contact', class: "card-estimate-pricing btn btn-treehouse btn-lg" do %>
+        Devis
+      <% end %>
+    </div>
+  </div>
+  </div>
 
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
-      Fiches produits
-    </div>
+</div>
 
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
-      E-books
-    </div>
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
-      Newsletters
-    </div>
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
-      Sous-titres
-    </div>
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
-      Et plus encore...
+<div class="container" id="about">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+
     </div>
   </div>
 </div>
+
 

@@ -28,18 +28,51 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .cards {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .cards {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-.card-category {
+.service-category {
+  background-size: cover !important;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.service-category p {
+  position: absolute;
+  bottom: 8px;
+  left: 30px;
+  font-size: 16px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  padding: 8px 30px;
+}
+
+.service-title {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  padding: 8px 30px;
+}
+
+.price-category {
   background-size: cover;
   background-position: center;
   height: 180px;
@@ -47,11 +80,55 @@
   justify-content: center;
   align-items: center;
   color: white;
+  text-align: center;
   font-size: 24px;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
+
+.card-estimate {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-estimate > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-estimate .card-estimate-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-estimate h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-estimate p {
+  font-size: 14px;
+  opacity: .7;
+  margin: 0;
+}
+
+.card-estimate-infos .card-estimate-button {
+  position: absolute;
+  right: 20px;
+  top: -20px;
+}
+
+.arrow {
+  color: #5FCC80;
+}
+
 
 
