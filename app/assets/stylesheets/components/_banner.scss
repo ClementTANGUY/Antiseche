@@ -11,6 +11,8 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 38px;
   font-weight: bold;
+  position: relative;
+  top: 100px;
 }
 
 .banner h2 {
@@ -31,7 +33,7 @@
 .chevron {
   color: white;
   position: relative;
-  top: 350px;
+  top: 400px;
 }
 
 .chevron a {
